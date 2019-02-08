@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### `Creating App`
@@ -48,7 +47,3 @@ npm install node-sass-chokidar --save-dev
 
 netstat -ano | findstr :3000
 taskkill /PID 9424 /F
-=======
-# React-App
-React application for learning
->>>>>>> 1dd0c9ae39f42dbbc12598e95d68f29f8ad0d1e1
