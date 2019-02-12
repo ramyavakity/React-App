@@ -22,39 +22,33 @@ class Header extends Component {
     let menuActive = this.state.isToggleOn ? 'is-active' : '';
     
     return (
-          <div className="navbar has-shadow">
-      <div className="container">
-        <div className="navbar-left">
+      <div className="navbar has-shadow " role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
           <a className="navbar-item">MyCompany</a>
-        </div>
-
-        <span className={'navbar-toggle '+menuActive} onClick={this.handleClick}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-
-        <div className={'navbar-right navbar-menu '+menuActive}>
-
+          <span className={"navbar-burger "+menuActive} onClick={this.handleClick}>
+              <span></span>
+              <span></span>
+              <span></span>
+          </span>
+      </div>
+      <div className={"navbar-end navbar-menu "+menuActive}>
           <Link to="/" className="navbar-item r-item">Home</Link>
           <Link to="/faq" className="navbar-item r-item">Features</Link>
           <Link to="/faq" className="navbar-item r-item">About</Link>
           <Link to="/faq" className="navbar-item r-item">FAQ</Link>
-
+      
           <div className="navbar-item">
-            <p className="control">
-              <a className="button is-primary is-outlined">
-                <span className="icon">
-                  <i className="fa fa-download"></i>
-                </span>
-                <span>Join Now</span>
-              </a>
-            </p>
+              <p className="control">
+                  <a className="button is-primary is-outlined">
+                      <span className="icon">
+                          <i className="fa fa-download"></i>
+                      </span>
+                      <span>Join Now</span>
+                  </a>
+              </p>
           </div>
-
-        </div>
       </div>
-    </div>
+     </div>
     );
   }
 }
