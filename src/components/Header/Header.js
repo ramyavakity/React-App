@@ -22,26 +22,26 @@ class Header extends Component {
     let menuActive = this.state.isToggleOn ? 'is-active' : '';
     
     return (
-          <div className="nav has-shadow">
+          <div className="navbar has-shadow">
       <div className="container">
-        <div className="nav-left">
-          <a className="nav-item">MyCompany</a>
+        <div className="navbar-left">
+          <a className="navbar-item">MyCompany</a>
         </div>
 
-        <span className={'nav-toggle '+menuActive} onClick={this.handleClick}>
+        <span className={'navbar-toggle '+menuActive} onClick={this.handleClick}>
           <span></span>
           <span></span>
           <span></span>
         </span>
 
-        <div className={'nav-right nav-menu '+menuActive}>
+        <div className={'navbar-right navbar-menu '+menuActive}>
 
-          <Link to="/" className="nav-item r-item">Home</Link>
-          <Link to="/faq" className="nav-item r-item">Features</Link>
-          <Link to="/faq" className="nav-item r-item">About</Link>
-          <Link to="/faq" className="nav-item r-item">FAQ</Link>
+          <Link to="/" className="navbar-item r-item">Home</Link>
+          <Link to="/faq" className="navbar-item r-item">Features</Link>
+          <Link to="/faq" className="navbar-item r-item">About</Link>
+          <Link to="/faq" className="navbar-item r-item">FAQ</Link>
 
-          <div className="nav-item">
+          <div className="navbar-item">
             <p className="control">
               <a className="button is-primary is-outlined">
                 <span className="icon">
