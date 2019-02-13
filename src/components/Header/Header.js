@@ -22,39 +22,33 @@ class Header extends Component {
     let menuActive = this.state.isToggleOn ? 'is-active' : '';
     
     return (
-          <div className="nav has-shadow">
-      <div className="container">
-        <div className="nav-left">
-          <a className="nav-item">MyCompany</a>
-        </div>
-
-        <span className={'nav-toggle '+menuActive} onClick={this.handleClick}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-
-        <div className={'nav-right nav-menu '+menuActive}>
-
-          <Link to="/" className="nav-item r-item">Home</Link>
-          <Link to="/faq" className="nav-item r-item">Features</Link>
-          <Link to="/faq" className="nav-item r-item">About</Link>
-          <Link to="/faq" className="nav-item r-item">FAQ</Link>
-
-          <div className="nav-item">
-            <p className="control">
-              <a className="button is-primary is-outlined">
-                <span className="icon">
-                  <i className="fa fa-download"></i>
-                </span>
-                <span>Join Now</span>
-              </a>
-            </p>
-          </div>
-
-        </div>
+      <div className="navbar has-shadow " role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+          <a className="navbar-item">MyCompany</a>
+          <span className={"navbar-burger "+menuActive} onClick={this.handleClick}>
+              <span></span>
+              <span></span>
+              <span></span>
+          </span>
       </div>
-    </div>
+      <div className={"navbar-end navbar-menu "+menuActive}>
+          <Link to="/" className="navbar-item r-item">Home</Link>
+          <Link to="/faq" className="navbar-item r-item">Features</Link>
+          <Link to="/faq" className="navbar-item r-item">About</Link>
+          <Link to="/faq" className="navbar-item r-item">FAQ</Link>
+      
+          <div className="navbar-item">
+              <p className="control">
+                  <a className="button is-primary is-outlined">
+                      <span className="icon">
+                          <i className="fa fa-download"></i>
+                      </span>
+                      <span>Join Now</span>
+                  </a>
+              </p>
+          </div>
+      </div>
+     </div>
     );
   }
 }
