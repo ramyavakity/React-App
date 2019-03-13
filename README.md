@@ -44,6 +44,7 @@ npm install node-sass-chokidar --save-dev
 
 
 
-
+rm -Rf node_modules
+$ npm install axios
 netstat -ano | findstr :3000
 taskkill /PID 9424 /F
