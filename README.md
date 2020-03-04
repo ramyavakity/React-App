@@ -11,9 +11,9 @@ This is a React based Application using Bulma
 ## Issues I faced during setting up
 1. npm ERR! Error: connect ECONNREFUSED
 ## Solution 
-npm config set proxy null
-npm config set https-proxy null
-npm config set registry http://registry.npmjs.org/
+1. npm config set proxy null
+2. npm config set https-proxy null
+3. npm config set registry http://registry.npmjs.org/
 
 
 
